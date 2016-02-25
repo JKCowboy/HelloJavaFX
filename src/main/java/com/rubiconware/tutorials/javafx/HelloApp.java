@@ -34,7 +34,7 @@ public class HelloApp extends Application {
 	public void start(Stage stage) throws Exception {
 		// Parent root =
 		// FXMLLoader.load(getClass().getResource("FontFileEditorFX.fxml"));
-		URL location = getClass().getResource("FontFileEditorFX.fxml");
+		URL location = getClass().getResource("HelloApp.fxml");
 		FXMLLoader fxmlLoader = new FXMLLoader();
 		fxmlLoader.setLocation(location);
 		fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
@@ -44,7 +44,8 @@ public class HelloApp extends Application {
 		stage.setScene(new Scene(root, 1000, 1000));
 		stage.show();
 
-		HelloApp controller = fxmlLoader.getController();
+		HelloController controller = fxmlLoader.getController();
+		controller.status();
 		// controller.setup();
 	}
 }
