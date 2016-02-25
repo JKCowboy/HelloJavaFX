@@ -41,7 +41,7 @@ public class HelloApp extends Application {
 		Parent root = (Parent) fxmlLoader.load(location.openStream());
 
 		stage.setTitle("Hello JavaFX");
-		stage.setScene(new Scene(root, 1000, 1000));
+		stage.setScene(new Scene(root, 600, 400));
 		stage.show();
 
 		HelloController controller = fxmlLoader.getController();

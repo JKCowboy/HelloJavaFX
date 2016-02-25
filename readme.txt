@@ -12,6 +12,9 @@ Run Jar:
 java -jar ./build/libs/HelloJavaFX.jar
 
 
+#Gotchas
+- Rember that your GUI elements must have a fx:id set that matches the name of the GUI elment in your controller (i.e labelHelloResponse).
+
 
 REFERENCES:
 http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-our-first-java-project/
